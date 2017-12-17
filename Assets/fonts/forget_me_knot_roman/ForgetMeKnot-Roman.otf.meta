@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: dce98d81699b012438040d41395a9bca
+timeCreated: 1512756488
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Forget Me Knot
+  fontNames:
+  - Forget Me Knot
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

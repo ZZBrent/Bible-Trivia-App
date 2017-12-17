@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="System"?>
+<table>
+    <database></database>
+    <name>Questions</name>
+    <ddl>CREATE TABLE Questions (QuestionText STRING, CorrectAnswer STRING, WrongAnswer1 STRING, WrongAnswer2 STRING, WrongAnswer3 STRING, SubmissionName STRING, Passage STRING);</ddl>
+    <columns>
+        <column>
+            <name>QuestionText</name>
+            <type>STRING</type>
+        </column>
+        <column>
+            <name>CorrectAnswer</name>
+            <type>STRING</type>
+        </column>
+        <column>
+            <name>WrongAnswer1</name>
+            <type>STRING</type>
+        </column>
+        <column>
+            <name>WrongAnswer2</name>
+            <type>STRING</type>
+        </column>
+        <column>
+            <name>WrongAnswer3</name>
+            <type>STRING</type>
+        </column>
+        <column>
+            <name>SubmissionName</name>
+            <type>STRING</type>
+        </column>
+        <column>
+            <name>Passage</name>
+            <type>STRING</type>
+        </column>
+    </columns>
+    <rows>
+        <row>
+            <value column="0">What was the name of Jesus' cousin?</value>
+            <value column="1">John</value>
+            <value column="2">Phillip</value>
+            <value column="3">Timothy</value>
+            <value column="4">Luke</value>
+            <value column="5">Jillian Keath</value>
+            <value column="6">Luke 1:36</value>
+        </row>
+        <row>
+            <value column="0">Which of Jesus' disciples cut off the ear of the high priest's servant</value>
+            <value column="1">Peter</value>
+            <value column="2">John</value>
+            <value column="3">Judah</value>
+            <value column="4">Andrew
+            </value>
+            <value column="5">Clementine</value>
+            <value column="6">John 18:10, Matthew 26:51</value>
+        </row>
+        <row>
+            <value column="0">What is the name of the relative that Jacob had to work 7 years (twice!) for each of his wives?</value>
+            <value column="1">Laban</value>
+            <value column="2">Zedekiah</value>
+            <value column="3">Ishmael</value>
+            <value column="4">Lot</value>
+            <value column="5"></value>
+            <value column="6">Genesis 29</value>
+        </row>
+        <row>
+            <value column="0">Out of all the Isrealites who escaped Egypt, only two were allowed to go into the promised Land.  Joshua and which other man?</value>
+            <value column="1">Caleb</value>
+            <value column="2">Moses</value>
+            <value column="3">Aaron</value>
+            <value column="4">Moses' father-in-law, Jethro</value>
+            <value column="5">Clementine</value>
+            <value column="6">Numbers 14</value>
+        </row>
+        <row>
+            <value column="0">Which book and chapter in the Bible states that Christians should be &quot;living sacrifices?&quot;</value>
+            <value column="1">Romans 12</value>
+            <value column="2">John 4</value>
+            <value column="3">Acts 2</value>
+            <value column="4">2 Corinthians</value>
+            <value column="5"></value>
+            <value column="6">Romans 12</value>
+        </row>
+        <row>
+            <value column="0">Which was a minor Judge?</value>
+            <value column="1">Tolah </value>
+            <value column="2">Korah </value>
+            <value column="3">Jael</value>
+            <value column="4">Joshua</value>
+            <value column="5">Tim Kuchenski</value>
+            <value column="6">Judges 10</value>
+        </row>
+        <row>
+            <value column="0">Which was not a Patriarch?</value>
+            <value column="1">Moses</value>
+            <value column="2">Isaac</value>
+            <value column="3">Abraham</value>
+            <value column="4">Jacob</value>
+            <value column="5">Tim Kuchenski</value>
+            <value column="6">Genesis</value>
+        </row>
+        <row>
+            <value column="0">what is the missing names of Joseph's (the Pharos) brothers... Benjamin, Judah, Simeon, Levi, Dan, Asher, Zebulun, Naphtali, Gad, Isachar, and...   </value>
+            <value column="1">Reuben</value>
+            <value column="2">Masorah</value>
+            <value column="3">Taavetti</value>
+            <value column="4">Eachann</value>
+            <value column="5">Lincoln Hoffman</value>
+            <value column="6"></value>
+        </row>
+        <row>
+            <value column="0">Who walked with God and was no more?</value>
+            <value column="1">Enoch</value>
+            <value column="2">Esau</value>
+            <value column="3">Ephriam</value>
+            <value column="4">Ellum</value>
+            <value column="5">Will</value>
+            <value column="6"></value>
+        </row>
+        <row>
+            <value column="0">Which two men never died?</value>
+            <value column="1">Enoch and Elijah</value>
+            <value column="2">Lazurus and John</value>
+            <value column="3">Elisha and Ephriam</value>
+            <value column="4">Caleb and Joshua</value>
+            <value column="5">Will</value>
+            <value column="6"></value>
+        </row>
+        <row>
+            <value column="0">Which of his eleven brothers suggested throwing Joseph in the empty cistern instead of killing him?</value>
+            <value column="1">Reuben</value>
+            <value column="2">Issachar</value>
+            <value column="3">Gad</value>
+            <value column="4">Judah</value>
+            <value column="5"></value>
+            <value column="6"></value>
+        </row>
+        <row>
+            <value column="0">Person in the bible who's name meant pain</value>
+            <value column="1">Jabez</value>
+            <value column="2">Prayer was named after him</value>
+            <value column="3">In the old testament </value>
+            <value column="4">1 chronicles</value>
+            <value column="5">Joe</value>
+            <value column="6">1 chronocles 4:10</value>
+        </row>
+        <row>
+            <value column="0">What is the moral of the good Samaritan? </value>
+            <value column="1">You don't have to be religious to be a good person</value>
+            <value column="2">Priests and Levites are jerks</value>
+            <value column="3">Stereotypes can be deceiving</value>
+            <value column="4">It is better to be a priest than a heathen no matter what</value>
+            <value column="5"></value>
+            <value column="6">Luke 10:25-37</value>
+        </row>
+        <row>
+            <value column="0">Which bald head summoned bears to kill forty two children?</value>
+            <value column="1">Elisha</value>
+            <value column="2">Samson</value>
+            <value column="3">Herod</value>
+            <value column="4">Paul</value>
+            <value column="5"></value>
+            <value column="6">2 Kings 2:23-24</value>
+        </row>
+        <row>
+            <value column="0">Out of the eater, something to eat; out of the strong, something sweet.</value>
+            <value column="1">What is sweeter than honey? What is stronger than a lion?</value>
+            <value column="2">If you had not plowed with my heifer, you would not have solved my riddle</value>
+            <value column="3">A Stove</value>
+            <value column="4">Sugar and muscles</value>
+            <value column="5"></value>
+            <value column="6">Judges 14:14-18</value>
+        </row>
+    </rows>
+</table>
