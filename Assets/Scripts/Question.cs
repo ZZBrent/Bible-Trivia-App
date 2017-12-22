@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Question {
 
+    public DateTime Time { get; set; }
     public string QuestionText { get; set; }
     public string CorrectAnswer { get; set; }
     public string WrongAnswer1 { get; set; }
@@ -12,8 +14,9 @@ public class Question {
     public string SubmissionName { get; set; }
     public string Passage { get; set; }
 
-    public Question(string question, string correctAnswer, string wrongAnswer1, string wrongAnswer2, string wrongAnswer3, string submissionName, string passage)
+    public Question(DateTime time, string question, string correctAnswer, string wrongAnswer1, string wrongAnswer2, string wrongAnswer3, string submissionName, string passage)
     {
+        Time = time;
         QuestionText = question;
         CorrectAnswer = correctAnswer;
         WrongAnswer1 = wrongAnswer1;

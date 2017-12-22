@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Bible Trivia.unity
+- path: C:/Users/KAdmin/Documents/Game Projects/Laser-Defender/completeunitycourse-laser-defender-c2008d595968/Assets/_Scenes/Level_01.unity
   isLoaded: 1
   isActive: 1

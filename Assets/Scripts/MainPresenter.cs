@@ -99,7 +99,10 @@ public class MainPresenter : MonoBehaviour {
     void showAnswerWindow()
     {
         answerText.GetComponent<Text>().text = string.Format("Answer: {0}", question.CorrectAnswer);
-        passageText.GetComponent<Text>().text = string.Format("From: {0}", question.Passage);
+        if (question.Passage != null && question.Passage != "")
+            passageText.GetComponent<Text>().text = string.Format("From: {0}", question.Passage);
+        else
+            passageText.GetComponent<Text>().text = "";
         answerResultWindow.SetActive(true);
         button1.GetComponent<Button>().onClick.RemoveAllListeners();
         button2.GetComponent<Button>().onClick.RemoveAllListeners();
@@ -116,13 +119,13 @@ public class MainPresenter : MonoBehaviour {
         if (Application.platform == RuntimePlatform.WebGLPlayer)
         {
             FetchQuestion();
-            q.QuestionText = node.ChildNodes[0].InnerText;
-            q.CorrectAnswer = node.ChildNodes[1].InnerText;
-            q.WrongAnswer1 = node.ChildNodes[2].InnerText;
-            q.WrongAnswer2 = node.ChildNodes[3].InnerText;
-            q.WrongAnswer3 = node.ChildNodes[4].InnerText;
-            q.SubmissionName = node.ChildNodes[5].InnerText;
-            q.Passage = node.ChildNodes[6].InnerText;
+            q.QuestionText = node.ChildNodes[1].InnerText;
+            q.CorrectAnswer = node.ChildNodes[2].InnerText;
+            q.WrongAnswer1 = node.ChildNodes[3].InnerText;
+            q.WrongAnswer2 = node.ChildNodes[4].InnerText;
+            q.WrongAnswer3 = node.ChildNodes[5].InnerText;
+            q.SubmissionName = node.ChildNodes[6].InnerText;
+            q.Passage = node.ChildNodes[7].InnerText;
         }
         else
         {
@@ -133,13 +136,13 @@ public class MainPresenter : MonoBehaviour {
             ArrayList result = db.RandomSelect("QUESTIONS", "*");
 
             string[] s = ((string[])result[0]);
-            q.QuestionText = s[0];
-            q.CorrectAnswer = s[1];
-            q.WrongAnswer1 = s[2];
-            q.WrongAnswer2 = s[3];
-            q.WrongAnswer3 = s[4];
-            q.SubmissionName = s[5];
-            q.Passage = s[6];
+            q.QuestionText = s[1];
+            q.CorrectAnswer = s[2];
+            q.WrongAnswer1 = s[3];
+            q.WrongAnswer2 = s[4];
+            q.WrongAnswer3 = s[5];
+            q.SubmissionName = s[6];
+            q.Passage = s[7];
 
             db.CloseDB();
         }
@@ -156,7 +159,7 @@ public class MainPresenter : MonoBehaviour {
         setupAnswerButton(button2Text, button2, answerList[1], question.CorrectAnswer);
         setupAnswerButton(button3Text, button3, answerList[2], question.CorrectAnswer);
         setupAnswerButton(button4Text, button4, answerList[3], question.CorrectAnswer);
-        if(question.SubmissionName != "")
+        if(question.SubmissionName != null && question.SubmissionName != "")
             submissionName.GetComponent<Text>().text = question.SubmissionName;
         else
             submissionName.GetComponent<Text>().text = "Anonymous";
